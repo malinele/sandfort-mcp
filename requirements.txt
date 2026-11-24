@@ -1,0 +1,5 @@
+# Dependencies for the Sandfort MCP server (mcp_server/sandfort_mcp.py).
+# Install into a Python 3.12 venv together with the Sandfort Python SDK wheel:
+#   python3.12 -m venv .venv
+#   .venv/bin/pip install ./sandfort_sdk-0.1.0-py3-none-any.whl -r requirements.txt
+mcp>=2

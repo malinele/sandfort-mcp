@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sandfort-mcp"
+version = "0.1.0"
+description = "Stdio MCP server for a running Sandfort instance"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+dependencies = ["mcp>=2", "sandfort-sdk>=0.1.0b82"]
+
+[project.urls]
+Homepage = "https://sandfort.dev"
+Repository = "https://github.com/malinele/sandfort"
+
+[project.scripts]
+sandfort-mcp = "sandfort_mcp:main"
+
+[tool.setuptools]
+py-modules = ["sandfort_mcp"]
